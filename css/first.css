@@ -1008,6 +1008,7 @@ button {
 }
 .l_header #wrapper .nav-main .title img {
   height: 64px;
+  vertical-align: middle;
 }
 .l_header .nav-sub {
   max-width: 1080px;
