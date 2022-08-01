@@ -25,7 +25,7 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
-  <link rel="preload" href="/css/style.8b2d48f1.css" as="style">
+  <link rel="preload" href="/css/style.8c8d7957.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -45,7 +45,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-07-09T13:31:18.670Z">
-<meta property="article:modified_time" content="2022-08-01T00:54:28.860Z">
+<meta property="article:modified_time" content="2022-08-01T08:07:11.468Z">
 <meta property="article:author" content="young Wu">
 <meta property="article:tag" content="宣传">
 <meta name="twitter:card" content="summary">
@@ -222,6 +222,14 @@ button {
     background: rgba(255,255,255,0.9) !important;
     backdrop-filter: saturate(200%) blur(20px);
   }
+}
+@supports (backdrop-filter: blur(20px)) {
+  .blur#comments {
+    backdrop-filter: unset;
+  }
+}
+#layoutHelper-comments {
+  margin-bottom: 100px;
 }
 .shadow {
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -1770,8 +1778,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.8b2d48f1.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.8b2d48f1.css"></noscript>
+  <link rel="stylesheet" href="/css/style.8c8d7957.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.8c8d7957.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1849,9 +1857,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.8b2d48f1.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.8c8d7957.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1659340569802),
+    lastupdate: new Date(1659345086472),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","qrcode","webinfo"],
       for_post: ["toc"],
@@ -2284,8 +2292,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
         <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self"  href="/" onclick="return false;" title="comment"></a></li>
         
-          <li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self"  href="/" onclick="return false;" title="toc"></a></li>
-        
       </ul>
     </div>
 		<div class="nav-main">
@@ -2685,7 +2691,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-<div id="l_main" class=''>
+<div id="l_main" class=' no_sidebar'>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://615blog.github.io/2022/07/09/hello-world/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -2791,7 +2797,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-01T08:54:28+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-01T16:07:11+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Aug 1, 2022</p>
@@ -2917,25 +2923,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
 
-  
-    
-    
-      
-    
-  
-
 
 <div class="widget-sticky pjax">
-
-  
-  
-
-
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
-
-  
 
 </div>
 
@@ -3717,53 +3706,51 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="giscus_container"></div>`)
-
-  volantis.giscus = {};
-
-  function check_giscus() {
-    if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
-    } else {
-      volantis.giscus.Theme = 'light';
+  volantis.layoutHelper("comments",`<div id="waline"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  
+  function pjax_waline() {
+    if(!document.querySelector("#waline"))return;
+    let locale = {};
+    let path = pdata.commentPath;
+    let pagePlaceholder = pdata.commentPlaceholder || "";
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
+    }
+    if(pagePlaceholder.length != 0) {
+      locale.placeholder = pagePlaceholder;
     }
 
-    return document.getElementById("giscus_container");
+    try {
+      Waline.init(Object.assign(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","path":null,"placeholder":null,"serverURL":"https://waline-oscm76db1-615blog.vercel.app/","imageUploader":{"api":null,"token":null,"resp":null},"pageview":true,"comment":true,"requiredMeta":["nick","mail"],"login":"enable"}, {
+        el: '#waline',
+        path: path,
+        // https://github.com/volantis-x/hexo-theme-volantis/issues/713
+        
+        locale,
+      }),pdata.commentConfig));
+    } catch (error) {
+      alert(`Waline ${error}`)
+    }
+    fancybox_waline()
   }
 
-  function pjax_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-    let cfg = Object.assign({"repo":"615blog/615blog.github.io","repo-id":"R_kgDOHvNKkw","category":"Announcements","category-id":"DIC_kwDOHvNKk84CQiLw","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN","theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
-    const script = document.createElement('script');
-    script.setAttribute('src', 'https://giscus.app/client.js');
-    Object.keys(cfg).forEach(k=>{
-      if (k != "theme") {
-        script.setAttribute('data-'+k, cfg[k]);
-      }
-    })
-    script.setAttribute('data-theme', volantis.giscus.Theme);
-    script.setAttribute('crossorigin', "anonymous");
-    HEAD.appendChild(script);
+  function fancybox_waline() {
+    if(typeof VolantisFancyBox === "undefined") {
+      const checkFancyBox = setInterval(() => {
+        if(typeof VolantisFancyBox === "undefined") return;
+        clearInterval(checkFancyBox);
+        VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
+      })
+    } else {
+      VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
+    }
   }
 
-  function dark_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-
-    const message = {
-      setConfig: {
-        theme: volantis.giscus.Theme
-      }
-    };
-    const giscusIframe = document.querySelector('iframe.giscus-frame');
-    giscusIframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-  }
-  pjax_giscus();
-  volantis.pjax.push(pjax_giscus);
-  volantis.dark.push(dark_giscus);
+  volantis.css('https://unpkg.com/@waline/client@v2/dist/waline.css')
+  volantis.js('https://unpkg.com/@waline/client@v2/dist/waline.js').then(pjax_waline)
+  volantis.pjax.push(pjax_waline);
 </script>
-
     
 
 
@@ -4068,7 +4055,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://pic.imgdb.cn/item/62e3e01af54cd3f937098975.png","https://pic.imgdb.cn/item/62e3e68ef54cd3f9373f459d.jpg","https://img1.imgtp.com/2022/08/01/nY50vZCf.jpg","https://pic.imgdb.cn/item/62e766a98c61dc3b8eb6a839.jpg","https://pic.imgdb.cn/item/62e767a78c61dc3b8eb7af9a.jpg","https://img1.imgtp.com/2022/08/01/y17n2pSG.jpg","https://pic.imgdb.cn/item/62e767198c61dc3b8eb71a73.jpg","https://img1.imgtp.com/2022/08/01/miNlL7EL.jpg","https://pic.imgdb.cn/item/62e3e84ff54cd3f9374ea6e1.jpg","https://img1.imgtp.com/2022/08/01/GJwTjJkj.jpg","https://img1.imgtp.com/2022/08/01/NbDMqzTp.jpg","https://img1.imgtp.com/2022/08/01/jdOcexkJ.jpg","https://pic.imgdb.cn/item/62e3e2b6f54cd3f9371f08a2.jpg","https://pic.imgdb.cn/item/62e3e83df54cd3f9374e029e.jpg","https://pic.imgdb.cn/item/62e768248c61dc3b8eb82db9.jpg","https://img1.imgtp.com/2022/08/01/DeGkVYpL.jpg","https://img1.imgtp.com/2022/08/01/4DY6Oyvu.jpg","https://pic.imgdb.cn/item/62e3e8b4f54cd3f93752159c.jpg","https://img1.imgtp.com/2022/08/01/Lp66JIuL.jpg","https://pic.imgdb.cn/item/62e3dfaff54cd3f937062bb8.jpg","https://pic.imgdb.cn/item/62e3e84ff54cd3f9374ea6e1.jpg","https://img1.imgtp.com/2022/08/01/F3LAOSmq.jpg","https://pic.imgdb.cn/item/62e3e81ff54cd3f9374d0272.jpg","https://pic.imgdb.cn/item/62e3e80ff54cd3f9374c6eab.jpg","https://img1.imgtp.com/2022/08/01/xzCDDaUN.jpg","https://img1.imgtp.com/2022/08/01/6olOvYEf.jpg","https://img1.imgtp.com/2022/08/01/71TdnoHu.jpg","https://img1.imgtp.com/2022/08/01/aloR3f2n.jpg"];
+  let imgs = ["https://img1.imgtp.com/2022/08/01/miNlL7EL.jpg","https://img1.imgtp.com/2022/08/01/F3LAOSmq.jpg","https://pic.imgdb.cn/item/62e3e80ff54cd3f9374c6eab.jpg","https://pic.imgdb.cn/item/62e3e01af54cd3f937098975.png","https://pic.imgdb.cn/item/62e3e84ff54cd3f9374ea6e1.jpg","https://pic.imgdb.cn/item/62e767198c61dc3b8eb71a73.jpg","https://pic.imgdb.cn/item/62e766a98c61dc3b8eb6a839.jpg","https://img1.imgtp.com/2022/08/01/NbDMqzTp.jpg","https://pic.imgdb.cn/item/62e3e81ff54cd3f9374d0272.jpg","https://pic.imgdb.cn/item/62e3e83df54cd3f9374e029e.jpg","https://pic.imgdb.cn/item/62e768248c61dc3b8eb82db9.jpg","https://img1.imgtp.com/2022/08/01/71TdnoHu.jpg","https://pic.imgdb.cn/item/62e3e8b4f54cd3f93752159c.jpg","https://img1.imgtp.com/2022/08/01/jdOcexkJ.jpg","https://img1.imgtp.com/2022/08/01/xzCDDaUN.jpg","https://img1.imgtp.com/2022/08/01/nY50vZCf.jpg","https://img1.imgtp.com/2022/08/01/4DY6Oyvu.jpg","https://pic.imgdb.cn/item/62e3e68ef54cd3f9373f459d.jpg","https://pic.imgdb.cn/item/62e3e2b6f54cd3f9371f08a2.jpg","https://img1.imgtp.com/2022/08/01/6olOvYEf.jpg","https://pic.imgdb.cn/item/62e767a78c61dc3b8eb7af9a.jpg","https://img1.imgtp.com/2022/08/01/y17n2pSG.jpg","https://img1.imgtp.com/2022/08/01/GJwTjJkj.jpg","https://img1.imgtp.com/2022/08/01/DeGkVYpL.jpg","https://img1.imgtp.com/2022/08/01/aloR3f2n.jpg","https://img1.imgtp.com/2022/08/01/Lp66JIuL.jpg","https://pic.imgdb.cn/item/62e3e84ff54cd3f9374ea6e1.jpg","https://pic.imgdb.cn/item/62e3dfaff54cd3f937062bb8.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4402,7 +4389,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"家电义务维修社","url":"https://615blog.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"young Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://615blog.github.io/","sameAs":["https://github.com/volantis-x"],"description":"商丘师范学院家电义务维修社是1995年经校团委批准成立的一个直接由院团委领导的科技服务性学生社团，在成立杜团之前，最初是1985年由几位同学自发组成的维修兴趣小组，传承至今，积累了丰富的维修经验！"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://615blog.github.io/","name":"家电义务维修社"}},{"@type":"ListItem","position":2,"item":{"@id":"https://615blog.github.io/categories/妙笔生花/","name":"妙笔生花"}},{"@type":"ListItem","position":3,"item":{"@id":"https://615blog.github.io/2022/07/09/hello-world/","name":"615blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"家电义务维修社","url":"https://615blog.github.io/","keywords":null,"description":"商丘师范学院家电义务维修社是1995年经校团委批准成立的一个直接由院团委领导的科技服务性学生社团，在成立杜团之前，最初是1985年由几位同学自发组成的维修兴趣小组，传承至今，积累了丰富的维修经验！","author":{"@type":"Person","name":"young Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://615blog.github.io/","description":"商丘师范学院家电义务维修社是1995年经校团委批准成立的一个直接由院团委领导的科技服务性学生社团，在成立杜团之前，最初是1985年由几位同学自发组成的维修兴趣小组，传承至今，积累了丰富的维修经验！"},"publisher":{"@type":"Organization","name":"家电义务维修社","url":"https://615blog.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://615blog.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"615blog","description":"\n\n欢迎来到家电的专属博客，这里将是灵感、知识、汗水、机遇的聚集地。","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://615blog.github.io/2022/07/09/hello-world/"},"author":{"@type":"Person","name":"young Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://615blog.github.io/"},"publisher":{"@type":"Organization","name":"家电义务维修社","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://615blog.github.io/2022/07/09/hello-world/","wordCount":34,"datePublished":"2022-07-09T13:31:18.670Z","dateModified":"2022-08-01T00:54:28.860Z","articleSection":"妙笔生花","keywords":"宣传","image":{"@type":"ImageObject","url":"https://pic.imgdb.cn/item/62e7242e8c61dc3b8e75df42.png","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"家电义务维修社","url":"https://615blog.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"young Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://615blog.github.io/","sameAs":["https://github.com/volantis-x"],"description":"商丘师范学院家电义务维修社是1995年经校团委批准成立的一个直接由院团委领导的科技服务性学生社团，在成立杜团之前，最初是1985年由几位同学自发组成的维修兴趣小组，传承至今，积累了丰富的维修经验！"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://615blog.github.io/","name":"家电义务维修社"}},{"@type":"ListItem","position":2,"item":{"@id":"https://615blog.github.io/categories/妙笔生花/","name":"妙笔生花"}},{"@type":"ListItem","position":3,"item":{"@id":"https://615blog.github.io/2022/07/09/hello-world/","name":"615blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"家电义务维修社","url":"https://615blog.github.io/","keywords":null,"description":"商丘师范学院家电义务维修社是1995年经校团委批准成立的一个直接由院团委领导的科技服务性学生社团，在成立杜团之前，最初是1985年由几位同学自发组成的维修兴趣小组，传承至今，积累了丰富的维修经验！","author":{"@type":"Person","name":"young Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://615blog.github.io/","description":"商丘师范学院家电义务维修社是1995年经校团委批准成立的一个直接由院团委领导的科技服务性学生社团，在成立杜团之前，最初是1985年由几位同学自发组成的维修兴趣小组，传承至今，积累了丰富的维修经验！"},"publisher":{"@type":"Organization","name":"家电义务维修社","url":"https://615blog.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://615blog.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"615blog","description":"\n\n欢迎来到家电的专属博客，这里将是灵感、知识、汗水、机遇的聚集地。","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://615blog.github.io/2022/07/09/hello-world/"},"author":{"@type":"Person","name":"young Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://615blog.github.io/"},"publisher":{"@type":"Organization","name":"家电义务维修社","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://615blog.github.io/2022/07/09/hello-world/","wordCount":34,"datePublished":"2022-07-09T13:31:18.670Z","dateModified":"2022-08-01T08:07:11.468Z","articleSection":"妙笔生花","keywords":"宣传","image":{"@type":"ImageObject","url":"https://pic.imgdb.cn/item/62e7242e8c61dc3b8e75df42.png","width":1024,"height":768}}]</script>
 
 
 
